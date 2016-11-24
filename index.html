@@ -14,121 +14,61 @@
 			article, aside, canvas, details, embed, 
 			figure, figcaption, footer, header, hgroup, 
 			menu, nav, output, ruby, section, summary,
-			time, mark, audio, video {
-				margin: 0;
-				padding: 0;
-				border: 0;
-				font-size: 100%;
-				font: inherit;
-				vertical-align: baseline;
+			time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;
 			}
 			/* HTML5 display-role reset for older browsers */
-			article, aside, details, figcaption, figure, 
-			footer, header, hgroup, menu, nav, section {
-				display: block;
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;
 			}
-			body {
-				line-height: 1;
-			}
-			ol, ul {
-				list-style: none;
-			}
-			blockquote, q {
-				quotes: none;
-			}
+			body {line-height: 1;}
+			ol, ul {list-style: none;}
+			blockquote, q {quotes: none;}
 			blockquote:before, blockquote:after,
-			q:before, q:after {
-				content: '';
-				content: none;
+			q:before, q:after {content: '';content: none;}
+			table {border-collapse: collapse;border-spacing: 0;}
+			html {height:100%;background-color:#4F7F9B;background:-webkit-gradient(linear,0 0,0 100%,from(#4F7F9B),to(#2A3D56));}
+			body {height:100%;}
+			header {margin-top:200px;font-size:120px;color:white;text-align:center;position:absolute;left:0;right:0;}
+			header span{color:#aa314d;display: inline-block;-webkit-transition:all 0.8s;font-family:微软雅黑;font-weight: bold;font-size: 140px;
 			}
-			table {
-				border-collapse: collapse;
-				border-spacing: 0;
-			}
-			html {
-				height:100%;
-				background-color:#4F7F9B;
-				background:-webkit-gradient(linear,0 0,0 100%,from(#4F7F9B),to(#2A3D56));
-			}
-			body {
-				height:100%;
-
-			}
-			header {
-				margin-top:30px;
-				font-size:120px;
-				color:white;
-				text-align:center;
-				position:absolute;
-				left:0;
-				right:0;
-			}
-			header span{
-				color:#aa314d;
-				display: inline-block;
-				-webkit-transition:all 0.8s;
-				font-family:微软雅黑;
-				font-weight: bold;
-				font-size: 140px;
-			}
-			header span:hover{
-				text-shadow: 10px 10px 10px 10px white;
-				transform:rotate(360deg);
-				-ms-transform:rotate(360deg); 	/* IE 9 */
-				-moz-transform:rotate(360deg); 	/* Firefox */
-				-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
-				-o-transform:rotate(360deg); 	/* Opera */
-
-				-webkit-transition:all 1s;
-			}
-			header b:hover{
-				        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
-				
-			}
-			header b{
-				font-family:微软雅黑;
-				color:white;
-				font-weight: normal;
-				-webkit-transition:all 1s;
-				display: inline-block;
-				/*float:left;*/
-			}
-			.content {
-				text-align:center;
-			}
-			.content a{
-				text-decoration:none;
-				border:2px solid white;
-				border-radius:7px;
-				font-family:微软雅黑;
-				display: inline-block;
-				padding: 10px;
-				width: 146px;
-				color:white;
-				-webkit-transition:all 0.5s;
-				box-shadow: 1px 1px 1px 1px gray;
-			}
-			.content a:hover{
-				width:170px;
-				text-shadow: 0 0 5px #FFF, 
-							0 0 10px gray, 
-							0 0 15px gray, 
-							0 0 20px #FF9900,
-							0 0 35px #FF9900, 
-							0 0 40px #FF9900, 
-							0 0 50px #FF9900, 
-							0 0 75px #FF9900;
-			}
+			header span:hover{text-shadow: 10px 10px 10px 10px white;transform:rotate(-30deg);-ms-transform:rotate(-30deg); 	/* IE 9 */-moz-transform:rotate(-30deg); 	/* Firefox */-webkit-transform:rotate(-30deg); /* Safari 和 Chrome */-o-transform:rotate(-30deg); 	/* Opera */-webkit-transition:all 0.5s;}
+			header b:hover{text-shadow: 0 0 5px #fff,0 0 10px gray, 0 0 15px gray, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;}
+			header b{font-family:微软雅黑;color:white;font-weight: normal;-webkit-transition:all 2s;display: inline-block;/*float:left;*/}
+			.content {text-align:center;}
+			.content a{text-decoration:none;border:2px solid white;border-radius:7px;font-family:微软雅黑;display: inline-block;padding: 10px;width: 146px;color:white;font-size:16px;-webkit-transition:all 1s;box-shadow: 1px 1px 1px 1px gray;}
+			.kit {margin-right:50px;color:orange;display: inline-block;position:relative;font-size:40px;padding:15px;border-radius: 10px;border:2px solid orange;font-family:微软雅黑;margin-bottom:50px;float:right;margin-top:50px;text-decoration: none;}
+			.kit-cont:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
+			.kit-con{zoom:1;/*IE6/IE7 HACK*/}
+			.content a:hover{width:170px;text-shadow: 0 0 5px #FFF, 0 0 10px gray, 0 0 15px gray, 0 0 20px #FF9900,0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;}
+			.head{min-width: 600px;display: inline-block;width:600px;}
+			.time{color:white;font-size:42px;font-family:微软雅黑;padding:10px;font-weight: bolder}
 		</style>
 	</head>
 <body>
+<div class="time"></div>
 <header>
-	<span>K</span><b>elichao</b>
+	<div class="head">
+		<span>K</span><b>elichao</b>
+		<div class="kit-cont">
+			<a title="文件详情" href="https://github.com/Kelichao/kit.js/blob/master/kit.js" class="kit">kit.js</a>
+		</div>
+	</div>
+	
 </header>
-<div style="width:100%;height:300px"></div>
+<div style="width:100%;height:600px"></div>
+
+
 <div class="content">
-	<a href="https://github.com/Kelichao/kit.js/blob/master/kit.js">完整版下载</a>
+	<a href="https://github.com/Kelichao/kit.js">完整版下载</a>
 </div>
 </body>
+<script type="text/javascript">
+	setTimeout(function() {
+		var today=new Date()
+		var h=today.getHours()
+		var m=today.getMinutes()
+		var s=today.getSeconds()
+		document.getElementsByClassName("time")[0].innerHTML=h+":"+m+":"+s
+		arguments.callee();
+	},1000)
+</script>
 </html>
-
