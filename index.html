@@ -62,13 +62,17 @@
 </div>
 </body>
 <script type="text/javascript">
-	setTimeout(function() {
-		var today=new Date()
-		var h=today.getHours()
-		var m=today.getMinutes()
-		var s=today.getSeconds()
-		document.getElementsByClassName("time")[0].innerHTML=h+":"+m+":"+s
-		arguments.callee();
-	},1000)
+var timeObj = document.getElementsByClassName("time")[0];
+setTimeout(function() {
+
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		timeObj.innerHTML=h+":"+m+":"+s;
+		timeObj.setAttribute("title", h+":"+m+":"+s);
+
+	setTimeout(arguments.callee, 1000);
+},1000);
 </script>
 </html>
