@@ -61,18 +61,16 @@
 	<a href="https://github.com/Kelichao/kit.js">完整版下载</a>
 </div>
 </body>
-<script type="text/javascript">
 var timeObj = document.getElementsByClassName("time")[0];
 setTimeout(function() {
 
 		var today = new Date();
-		var h = today.getHours();
-		var m = today.getMinutes();
-		var s = today.getSeconds();
+		var h = today.getHours().toString().length !== 2 ? "0" + today.getHours() : today.getHours();
+		var m = today.getMinutes().toString().length !== 2 ? "0" + today.getMinutes() : today.getMinutes();
+		var s = today.getSeconds().toString().length !== 2 ? "0" + today.getSeconds() : today.getSeconds();
 		timeObj.innerHTML=h+":"+m+":"+s;
 		timeObj.setAttribute("title", h+":"+m+":"+s);
 
 	setTimeout(arguments.callee, 1000);
 },1000);
-</script>
 </html>
