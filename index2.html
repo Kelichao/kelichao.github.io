@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 页面编码格式  -->
+    <meta charset="UTF-8">
+    <!-- 移动端viewPort -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 忽略将数字变为电话号码,邮箱地址-->
+    <meta name="format-detection" content="telephone=no,email=no">
+
+    <title>抚仙湖</title>
+    <style type="text/css">
+        /* 这里的width是指实际的页面宽度 */
+
+        /*根元素字体不会小于12px*/
+
+        /* 这里的width是指实际的页面宽度 */
+
+        @media screen and (max-width: 320px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        /* 375为iphone6屏幕宽度 */
+
+        @media screen and (min-width: 321px) and (max-width: 375px) {
+            html {
+                font-size: 20px;
+            }
+        }
+
+        /*  414为iphone6plus的屏幕宽度 */
+
+        @media screen and (min-width: 376px) and (max-width: 414px) {
+            html {
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 640px) {
+            html {
+                font-size: 24px;
+            }
+        }
+
+        @media screen and (min-width: 641px) {
+            html {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size:1.4rem;">
+        <!-- <audio src="./src/fxh.mp3" autoplay>
+        您的浏览器不支持 audio 标签。
+        </audio> -->
+        <h2 style="text-align:center;">抚仙湖</h2>
+        <div>
+            <img class="bg" src="./src/bg.png">
+        </div>
+
+        <h5 style="text-align:center;font-family: 微软雅黑">by Jay Zhou</h5>
+        <h5 class="download" style="font-size: 0.8rem;text-align:center;font-family: 微软雅黑;font-weight:normal;">下载(ios不支持)</h5>
+        <audio loop="loop" class="audio" src="./src/fxh.mp3" controls="controls" autoplay="autoplay">
+            您的浏览器不支持 audio 标签。
+        </audio>
+
+    </div>
+    <script>
+        document.querySelector(".download").addEventListener("click", function () {
+            window.location.href = "./src/fxh.mp3";
+        })
+    </script>
+    <style>
+        .bg {
+            margin: 0 auto;
+            display: block;
+            height: 10rem;
+            width: 10rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0px 0px 12px #000;
+        }
+
+        .audio {
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* height: 5rem; */
+        }
+    </style>
+</body>
+
+</html>
