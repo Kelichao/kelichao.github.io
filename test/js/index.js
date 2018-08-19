@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('准备好了吗|有话对你说|#countdown 3|我知道|遇见你|不容易|错过你很可惜|愿|余生|都是你|我的猪');
+      S.UI.simulate('我有话|要对你说|#countdown 3|准备好了吗|我知道|遇见你|不容易|错过你|很可惜|愿|余生|都是你|我的猪猪|我爱你~');
     }
 
     S.Drawing.loop(function () {
